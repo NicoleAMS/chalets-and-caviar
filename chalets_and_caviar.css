@@ -1,0 +1,515 @@
+/* GENERAL */
+.elementor-widget-text-editor, .elementor-widget-heading .elementor-heading-title {
+	font-family: "Antic", Sans-serif;
+}
+
+.entry-content p {
+	margin-bottom: 0;
+}
+
+.line {
+	margin-top: -10px;
+}
+
+/* HEADER */
+.main-header-menu > .menu-item > a {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+/* HOMEPAGE */
+
+/* hides white space between header and homepage banner */
+#post-9 {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.ast-separate-container #primary {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.ast-separate-container #primary {
+	padding: 0;
+}
+/* ESTATIK */
+
+/* changes the featured label text to gold */
+.es-property-label-featured {
+	color: #977e29 !important;
+}
+
+/* hides dropdown from featured properties */
+#home_featured_sales_section form.es-dropdown-container, #home_featured_rentals_section form.es-dropdown-container {
+	display: none;
+}
+
+/* ESTATIK SLIDER */
+
+/* adjust width */
+.es-slideshow.es-slideshow__horizontal {
+	max-width: 1200px;
+	width: 100%;
+} 
+
+.es-slide .es-slide__content {
+	height: 80px;
+}
+
+.es-slide .es-slide__top {
+	padding: 0 5%;
+}
+.es-slide .es-slide__content .es-slide__bottom {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	padding-top: 10px;
+}
+
+.es-slide .es-slide__bottom .es-bottom-icon {
+	text-align: center !important;
+	width: calc(100% / 3);
+	min-width: 45px;
+	padding-bottom: 5px;
+}
+
+.es-slide .es-slide__bottom .es-bottom-icon .es-icon {
+	display: block;
+	margin: auto;
+	height: 16px !important;
+}
+
+@media only screen and (max-width: 750px) {
+	.es-slide .es-slide__bottom .es-bottom-icon {
+		font-size: 9px;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	#latest-chalets-slider {
+		display: none;
+	}
+}
+
+/* ESTATIK HOMEPAGE GRID VIEW DESKTOP/DEFAULT */
+
+/* Estatik icons alignment */
+.homepage-grid .properties .es-bottom-icon-cols, .homepage-grid .properties .es-bottom-icon-cols, .es-slide .es-slide__bottom  {
+	justify-content: flex-start !important;
+}
+
+/* display details block */
+.homepage-grid .properties .es-details-wrap, .homepage-grid .properties .es-details-wrap {
+	display: block !important;
+}
+
+/* force 3-col layout */
+.homepage-grid .es-layout-2_col .properties, .homepage-grid .es-layout-list .properties {
+	width: calc((100% - 42px)/ 3);
+	margin: auto 0;
+	padding: 0;
+	display: inline-block!important;
+}
+
+.homepage-grid .es-layout-list .properties .es-property-inner {
+	display: block !important;
+	padding: 0;
+	width: 100%;
+}
+
+.homepage-grid .es-layout-2_col .properties:nth-child(2n+2), .homepage-grid .es-layout-list .properties:nth-child(2n+2) {
+	margin-left: 20px !important;
+	margin-right: 20px !important;
+}
+
+.homepage-grid .es-layout-list .es-property-inner .es-property-thumbnail {
+	width: 100%;
+	padding: 10px;
+}
+
+.homepage-grid .es-layout-list .es-property-inner .es-property-info {
+	width: 100%;
+	padding-left: inherit;
+	font-size: inherit;
+	position: inherit;
+}
+
+.homepage-grid .es-layout-list .es-row-view {
+	display: none;
+}
+
+.homepage-grid .es-layout-list .es-col-view {
+	display: inherit;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.homepage-grid .es-layout-list .es-col-view h2 {
+	width: inherit;
+	padding: 0;
+}
+
+.homepage-grid .es-layout-list .es-col-view h2 .es-property-link {
+	flex: 1 0;
+	text-align: left;
+	text-decoration: none;
+	display: block;
+	line-height: 19px;
+	padding-bottom: 10px;
+}
+
+.homepage-grid .es-layout-list .es-col-view .es-price {
+	background: 0 0 !important;
+	color: #444;
+	font-size: 24px;
+	padding: 0;
+}
+
+.homepage-grid .es-layout-list .es-property-inner .es-property-info .es-property-content {
+	display: none;
+}
+
+.homepage-grid .es-layout-list .es-property-inner .es-bottom-info {
+	display: inherit;
+	width: inherit;
+	position: inherit;
+	bottom: inherit;
+	background: #f0f0f0 !important;
+}
+
+.homepage-grid .es-layout-list .es-property-inner .es-bottom-info .es-bottom-icon-list {
+	display: flex !important;
+	padding: 10px;
+	align-items: flex-start !important;
+	justify-content: flex-start !important;
+}
+
+.homepage-grid .es-layout-list .es-property-inner .es-bottom-info .es-bottom-icon-list .es-bottom-icon {
+	margin-right: inherit;
+	text-align: center;
+	width: calc(100% / 3);
+	font-size: 14px;
+}
+
+.homepage-grid .es-layout-list .properties .es-bottom-icon-list .es-bottom-icon .es-icon {
+	display: block;
+	margin: auto;
+	height: 20px;
+	background-repeat: no-repeat;
+}
+
+.homepage-grid .es-layout-list .properties .es-details-wrap {
+	text-align: center;
+	font-size: 14px;
+	padding: 0 0 20px;
+	background: #f0f0f0 !important;
+}
+
+.homepage-grid .es-layout-list .es-property-inner .es-bottom-info .es-details-flex {
+	text-align: inherit;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.homepage-grid .es-layout-list .properties .es-details-wrap .es-read-wrap {
+	flex: 0 0 40%;
+	text-align: center;
+}
+
+.homepage-grid .es-layout-list .es-property-inner .es-hover-show {
+	display: inline-block !important;
+}
+
+@media only screen and (max-width: 860px) {
+	.homepage-grid .es-listing .es-property-inner .es-property-info h2 a {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (min-width: 531px) and (max-width: 840px) {
+	
+	.homepage-grid .es-layout-3_col .properties:nth-child(3n+2), .homepage-grid .es-layout-2_col .properties:nth-child(2n+2) {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	
+	.homepage-grid .es-layout-3_col .es-property-inner:hover .es-details-wrap, .homepage-grid .es-layout-2_col .es-property-inner:hover .es-details-wrap {
+		border: none !important;
+	}
+}
+
+@media only screen and (max-width: 530px) {
+		.homepage-grid .es-layout-2_col .properties, .homepage-grid .astra .es-layout-2_col .properties:nth-child(2n+2) { 
+			width: 100% !important;
+			margin-right: 0 !important;
+			margin-left: 0 !important;
+	}
+}
+
+/* ESTATIK HOMEPAGE 1 COL VIEW */
+
+@media all and (max-width: 840px) {
+   .homepage-grid .properties {
+      width: 100% !important;
+    }
+
+	 .homepage-grid .properties .es-property-inner {
+      display: block;
+    }
+
+   .homepage-grid .properties .es-property-inner .es-property-thumbnail {
+      padding: 0;
+    }
+
+   .homepage-grid .es-property-info .es-row-view {
+      display: inline-block;
+      width: 100%;
+   }
+
+   .homepage-grid .es-col-view {
+      display: none;
+    }
+
+   .homepage-grid .properties h2 {
+      text-align: left;
+      padding: 0;
+   }
+
+   .homepage-grid .properties h2 a {
+      font-size: 16px;
+      padding: 10px;
+      font-weight: 800 !important;
+      text-decoration: none !important;
+      display: inline-block;
+   }
+	
+	.homepage-grid .properties .es-bottom-icon-cols {
+		justify-content: space-around !important;
+	}
+	
+	.homepage-grid .es-layout-2_col .properties:hover .es-details-wrap, .homepage-grid .es-layout-3_col .properties:hover .es-details-wrap {
+		position: inherit;
+		border: none;
+	}
+}
+
+/* ESTATIK SALES/RENTALS FORCE LIST VIEW */
+
+#sales-page-list .es-layout-3_col .properties:nth-child(3n+2), #sales-page-list .es-layout-2_col .properties:nth-child(2n+2), #rentals-page-list .es-layout-3_col .properties:nth-child(3n+2), #rentals-page-list .es-layout-2_col .properties:nth-child(2n+2) {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+#sales-page-list .es-layout-2_col .properties .es-bottom-icon-cols, #sales-page-list .es-layout-3_col .properties .es-bottom-icon-cols, #rentals-page-list .es-layout-2_col .properties .es-bottom-icon-cols, #rentals-page-list .es-layout-3_col .properties .es-bottom-icon-cols {
+	display: inline-block !important;
+	min-width: 300px;
+}
+
+#sales-page-list .es-layout-2_col .properties .es-bottom-info, #sales-page-list .es-layout-3_col .properties .es-bottom-info, #rentals-page-list .es-layout-2_col .properties .es-bottom-info, #rentals-page-list .es-layout-3_col .properties .es-bottom-info {
+	display: inline-block !important;
+}
+
+#sales-page-list .es-layout-2_col .properties .es-details-wrap, #sales-page-list .es-layout-3_col .properties .es-details-wrap, #rentals-page-list .es-layout-2_col .properties .es-details-wrap, #rentals-page-list .es-layout-3_col .properties .es-details-wrap {
+	display: inline-block !important;
+	width: auto !important;
+}
+
+/* ESTATIK SALES/RENTALS LIST VIEW */
+
+.list-view .properties {
+	width: 100% !important;
+}
+
+.list-view .properties .es-property-inner {
+	padding: 0;
+	display: flex!important;
+}
+
+.list-view .properties .es-property-inner .es-property-thumbnail {
+	width: 45%;
+	padding: 0;
+	align-self: center;
+}
+
+@media all and (max-width: 960px) {
+	.list-view .properties .es-property-inner .es-property-thumbnail {
+    width: 55%;
+		padding: 0;
+		align-self: center;
+	}
+}
+
+.list-view .properties .es-property-inner .es-property-info {
+	width: 55%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+@media all and (max-width: 768px) {
+	.list-view .properties .es-property-inner .es-property-thumbnail, .list-view .properties .es-property-inner .es-property-info {
+    width: 100%;
+	}
+	
+	.list-view .properties .es-property-inner {
+		display: block !important;
+	}
+}
+
+#sales-page-list .properties h2, #rentals-page-list .properties h2 {
+	text-align: left;
+	padding: 0;
+}
+
+.list-view .properties .es-property-inner .es-property-info h2 a {
+	font-size: 16px;
+	padding: 10px;
+	font-weight: 800;
+	text-decoration: none;
+	display: inline-block;
+}
+
+#sales-page-list .es-row-view, #rentals-page-list .es-row-view {
+	width: 100%;
+	display: inline-block;
+}
+
+.list-view .es-col-view {
+	display: none;
+}
+
+.list-view .es-price {
+	background: #fff !important;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: 800;
+}
+
+#sales-page-list .es-property-content, #rentals-page-list .es-property-content {
+	padding: 10px;
+	display: flex;
+	text-align: justify;
+}
+
+.list-view .es-property-excerpt {
+	max-height: 200px !important;
+}
+
+.list-view .es-property-excerpt p:first-child {
+	font-size: 14px !important;
+  	overflow: hidden;
+}
+
+#sales-page-list .es-bottom-info, #rentals-page-list .es-bottom-info {
+	padding: 10px;
+	position: inherit !important;
+	bottom: inherit;
+	flex-wrap: wrap;
+	background: #fff !important;
+}
+
+.list-view .es-bottom-info a.es-button.es-read {
+	display: inline-block !important;
+	padding: 10px 35px;
+	text-transform: uppercase;
+	border-radius: 0;
+}
+
+.list-view .es-bottom-info .es-bottom-icon-list {
+	min-width: 300px;
+	margin-bottom: 10px;
+}
+
+#sales-page-list .es-bottom-icon, #rentals-page-list .es-bottom-icon {
+	width: inherit;
+	padding-right: 10px;
+}
+
+#sales-page-list .es-icon, #rentals-page-list .es-icon {
+	display: inline-block;
+}
+
+#sales-page-list .es-details-wrap, #rentals-page-list .es-details-wrap {
+	display: flex;
+	position: inherit;
+	border: none !important;
+	background: #fff !important;
+	padding: 10px 0 0 0;
+}
+
+/* ESTATIK SINGLE PROPERTY */
+.es-single .es-property-fields li:not(:last-child) a, .es-single .es-cat-price .es-category-items a {
+	color: #444;
+	pointer-events: none;
+	text-decoration: none;
+	cursor: default;
+}
+
+/* CONTACT FORM */
+
+.elementor-19 .elementor-element.elementor-element-e7b898d .eael-contact-form-7 .wpcf7-form p:not(:last-of-type) .wpcf7-form-control-wrap {
+	margin-bottom: 0;
+}
+
+#contact-form-left {
+	width: 47%;
+	float: left;
+	margin-right: 20px;
+}
+
+#contact-form-right {
+	float: left;
+	width: 47%;
+	vertical-align: top;
+}
+
+#contact-form-right .wpcf7-submit {
+		display: inline-block;
+    max-width: 250px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.clearfix {
+	display: block;
+}
+
+.clearfix:after {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+/* error message */
+span.wpcf7-not-valid-tip {
+	color: #00abe5;
+}
+
+.wpcf7 .wpcf7-validation-errors {
+	border-color: #00abe5;
+}
+
+/* responsive contact form */
+
+@media only screen and (max-width: 768px) {
+	#contact-form-right {
+		width: 100%;
+	}
+	#contact-form-left {
+		width: 75%;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	#contact-form-left {
+		width: 100%;
+	}
+}
